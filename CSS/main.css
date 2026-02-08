@@ -1,0 +1,153 @@
+:root {
+  /* BACKGROUNDS */
+  --bg-dark: #121212;
+  /* Sfondo pagina */
+  --bg-card: #1E1E1E;
+  /* Sfondo box/card */
+  /* TEXT */
+  --text-main: #F5F5F5;
+  /* Bianco sporco */
+  --text-muted: #AAAAAA;
+  /* Grigio */
+  /* ACCENTS */
+  --gold-main: #FFD700;
+  /* Oro acceso */
+  --gold-dark: #D4AF37;
+  /* Oro antico/metallico */
+  /* CONTRADE */
+  --platano-orange: #FF8C00;
+  --platano-black: #111111;
+  --torre-yellow: #FFD700;
+  --torre-blue: #0033CC;
+  --cavallo-white: #F0F0F0;
+  --cavallo-red: #CC0000;
+  /* FONTS */
+  --font-title: "Cinzel", serif;
+  --font-body: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  padding: 1em;
+  background: black;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+.navbar nav {
+  display: none;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background-color: black;
+  height: 100vh;
+  padding: 1em;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav ul.primary-nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav ul.primary-nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+a {
+  color: var(--gold-main);
+  text-decoration: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  background-image: url(La_Giostra/Img/ContradeCavalieri.png);
+  background-color: #0033CC;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 2.5em;
+  margin-top: 0.2em;
+}
+
+footer {
+  background-color: black;
+  padding: 2em;
+}
+footer .container {
+  display: flex;
+  place-content: space-between;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 250px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: center;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+}/*# sourceMappingURL=main.css.map */

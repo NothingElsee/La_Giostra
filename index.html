@@ -1,64 +1,185 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="Author" content="NothingElsee">
-        <meta name="keywords" content="HTML, LaGiostra, Giostra, Contrada, Platano, Torre, Cavallo, Cavalieri">
-        <meta name="Descrizione" content="Sito Web per la Festa Medioevale "La Giostra">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>La Giostra</title>
-        <link rel="stylesheet" href="CSS/main.css">
-    </head>
-    <body>
-        <header>
-            <div class="navabr">
-                <div class="container">
-                    <a href="https://www.lagiostracastellomatese.it/" target="_blank"><img height="100" src="Img/Icone/LogoConGiullare.png" alt="La Giostra"></a>
-                    <!-- target="_blank" dice al browser di aprire il link in un altra scheda-->
-                    
-                    <img height="21" id="mobile-cta" class="mobile-menu" src="Img/Assets/burger-menu-svgrepo-com.svg" alt="Menu">
 
-                    <!--Menu-->
-                    <nav>
-                        <img height="21" id="mobile-exit" class="mobile-menu-exit" src="Img/Assets/close-x-svgrepo-com.svg" alt="Chiudi">
-                        <ul class="primary-nav">
-                            <li class="current"><a href="index.html">Home</a></li>
-                            <li><a href="Albo_Doro.html">Albo D'oro</a></li>
-                            <li><a href="About_Us.html">Chi Siamo</a></li>
-                        </ul> 
-                    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="NothingElsee">
+    <meta name="keywords" content="HTML, LaGiostra, Giostra, Contrada, Platano, Torre, Cavallo, Cavalieri">
+    <meta name="Descrizione" content="Sito Web per la Festa Medioevale " La Giostra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Giostra</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="https://www.lagiostracastellomatese.it/"><img height="100"
+                        src="Img/Icone/LogoConGiullare.png" alt="La Giostra"></a>
+                <!-- target="_blank" dice al browser di aprire il link in un altra scheda-->
+
+                <img height="21" id="mobile-cta" class="mobile-menu" src="Img/Assets/burger-menu-svgrepo-com.svg"
+                    alt="Menu">
+
+                <!--Menu-->
+                <nav>
+                    <img height="21" id="mobile-exit" class="mobile-menu-exit" src="Img/Assets/close-x-svgrepo-com.svg"
+                        alt="Chiudi">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="Albo_Doro.html">Albo D'oro</a></li>
+                        <li><a href="About_Us.html">Chi Siamo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr />
+    </header>
+
+    <main>
+        <section class="hero" background-image="Img/Assets/hero-bg.jpg">
+            <div class="container">
+                <h3>TRE VESSILLI PER LA GLORIA</h3>
+                <h1 class="main-title">XXX EDIZIONE</h1>
+                <h2 class="subtitle">TRENT'ANNI DI SFIDE</h2>
+
+                <p class="event-date">31-1-2 Luglio-Agosto 2026 • Castello del Matese (CE)</p>
+            </div>
+        </section>
+
+        <section class="palio">
+            <div class="container">
+                <div class="right-col">
+                    <h2>Il Palio</h2>
+                    <p>Dopo aver prestato giuramento di fedeltà al signore del castello, i tre cavalieri designati dalle
+                        contrade a rappresentarli nella disfida passeranno, una volta giunti sul campo di gara, al rito
+                        del “tocco” con cui verrà designato l’ordine di gara. Ogni cavaliere, vestito con i colori della
+                        propria contrada, cercherà di infilare al galoppo anelli via via sempre più piccoli ai quali
+                        corrisponde un punteggio, se infilzati, in base alla grandezza; questo per un totale di cinque
+                        tornate. Durante la gara sarà presente la giuria che deciderà sulla regolare andatura del
+                        cavaliere...</p>
                 </div>
             </div>
-            <hr/>
-        </header>
+        </section>
 
-        <main>
-            <section class="hero">
-                <h1>Benvenuti alla Giostra del Castello del Matese</h1>
-                <div class="container">
-                    <h2>XXX Edizione</h2>
-                <h2>31-1-2 Luglio-Agosto 2026</h2>
-                <h2>Castello del Matese (CE)</h2>
-                <h3>Finito lo giubilo, li ranghi serriamo
-                    La Giostra ventura dinanzi c'abbiamo
-
-
-                    Un anno importante, de celebratione
-                    Necessita cura e maggior attentione
-
-
-                    Per la cifra speciale si parta d'effetto
-                    Con formula magica e lo cancelletto</h3>
+        <section class="contrade">
+            <div class="container">
+                <div class="header-section">
+                    <h2>I Protagonisti</h2>
                 </div>
-            </section>
-        </main>
 
-        <footer>
-            <dl>
-                <dt> <a href="https://www.instagram.com/lagiostradicastellodelmatese/?hl=it" target="_blank">Instagram</a></li>
-                <dt><a href="https://www.facebook.com/lagiostradicastellodelmatese#" target="_blank">Facebook</a></li>
-                <dt><a href="https://x.com/AssCluvia" target="_blank">X</a></li>
-            </dl>
-        </footer>
-    </body>
+                <div class="contrade-grid">
+                    <div class="card-inner">
+                        <div class="stemma-platano">
+                            <img src="Img/Icone/Platano.png" alt="Stemma Platano">
+                        </div>
+                        <div class="card-content">
+                            <h3>PALTANO</h3>
+                            <span class="motto">Motto</span>
+                            <div class="btn-arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="card-inner">
+                        <div class="stemma-cavallo">
+                            <img src="Img/Icone/Cavallo.png" alt="Stemma Cavallo">
+                        </div>
+                        <div class="card-content">
+                            <h3>CAVALLO</h3>
+                            <span class="motto">Motto</span>
+                            <div class="btn-arrow"></div>
+                        </div>
+                    </div>
+
+                    <div class="card-inner">
+                        <div class="stemma-torre">
+                            <img src="Img/Icone/Torre.png" alt="Stemma Torre">
+                        </div>
+                        <div class="card-content">
+                            <h3>TORRE</h3>
+                            <span class="motto">Motto</span>
+                            <div class="btn-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="albo-doro">
+            <div class="container">
+                <div class="albo-header">
+                    <h2>L'ALBO D'ORO</h2>
+                    <p class="subtitle">30 Anni di Gloria</p>
+                </div>
+
+                <div class="stat-div">
+                    <div class="stat-platano">
+                        <span class="count">34</span>
+                        <span class="label">Vittorie Platano</span>
+                        <div class="bar-color-platano"></div>
+                    </div>
+                    <div class="stat-cavallo">
+                        <span class="count">4</span>
+                        <span class="label">Vittorie Cavallo</span>
+                        <div class="bar-color-cavallo"></div>
+                    </div>
+                    <div class="stat-torre">
+                        <span class="count">2</span>
+                        <span class="label">Vittorie Torre</span>
+                        <div class="bar-color-torre"></div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="foot-left-col">
+                <img height="52" src="Img/Icone/logo.png" alt="Logo Giostra">
+                XXX Edizione - 2026
+            </div>
+
+            <div class="foot-2th-col">
+                <h3>Contatti</h3>
+                <p>Per informazioni, prenotazioni o richieste, contattaci:</p>
+                <ul>
+                    <li>Email: infolagiostra@gmail.com</li>
+                    <li>Telefono: +39 320 566 6942 Anna della Penda</li>
+                    <li>Dove Siamo: <a href="https://maps.app.goo.gl/NZn6cZM576RdTACfA" target="_blank">Castello del
+                            Matese</a></li>
+            </div>
+
+            <div class="foot-3th-col">
+                <dl>
+                    <dt> <a href="https://www.instagram.com/lagiostradicastellodelmatese/?hl=it"
+                            target="_blank">Instagram</a>
+                        </li>
+                    <dt><a href="https://www.facebook.com/lagiostradicastellodelmatese#" target="_blank">Facebook</a>
+                        </li>
+                    <dt><a href="https://x.com/AssCluvia" target="_blank">X</a></li>
+                </dl>
+            </div>
+
+            <div class="foot-right-col">
+                <p>Copyright © 2024 La Giostra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript per il menu mobile
+        const mobileCTA = document.getElementById('mobile-cta');
+        const mobileExit = document.getElementById('mobile-exit');
+        const nav = document.querySelector('nav');
+
+        mobileCTA.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+
+        mobileExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+    </script>
+</body>
 </html>
