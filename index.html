@@ -7,38 +7,50 @@
         <meta name="Descrizione" content="Sito Web per la Festa Medioevale "La Giostra">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Giostra</title>
+        <link rel="stylesheet" href="CSS/main.css">
     </head>
     <body>
         <header>
-            <span>
-                <a href="https://www.lagiostracastellomatese.it/" target="_blank"><img height="100" src="Img/Icone/LogoConGiullare.png" alt="La Giostra"></a>
-                <!-- target="_blank" dice al browser di aprire il link in un altra scheda-->
-            </span>
+            <div class="navabr">
+                <div class="container">
+                    <a href="https://www.lagiostracastellomatese.it/" target="_blank"><img height="100" src="Img/Icone/LogoConGiullare.png" alt="La Giostra"></a>
+                    <!-- target="_blank" dice al browser di aprire il link in un altra scheda-->
+                    
+                    <img height="21" id="mobile-cta" class="mobile-menu" src="Img/Assets/burger-menu-svgrepo-com.svg" alt="Menu">
 
-            <!--Menu-->
-            <span>
-                <a href="index.html">Home</a>
-                <a href="Albo_Doro.html">Albo D'oro</a>
-                <a href="About_Us.html">Chi Siamo</a>
-            </span>
+                    <!--Menu-->
+                    <nav>
+                        <img height="21" id="mobile-exit" class="mobile-menu-exit" src="Img/Assets/close-x-svgrepo-com.svg" alt="Chiudi">
+                        <ul class="primary-nav">
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="Albo_Doro.html">Albo D'oro</a></li>
+                            <li><a href="About_Us.html">Chi Siamo</a></li>
+                        </ul> 
+                    </nav>
+                </div>
+            </div>
             <hr/>
         </header>
 
         <main>
-            <h1>Benvenuti alla Giostra del Castello del Matese</h1>
-            <h2>XXX Edizione</h2>
-            <h2>31-1-2 Luglio-Agosto 2026</h2>
-            <h2>Castello del Matese (CE)</h2>
-            <h3>Finito lo giubilo, li ranghi serriamo
-                La Giostra ventura dinanzi c'abbiamo
+            <section class="hero">
+                <h1>Benvenuti alla Giostra del Castello del Matese</h1>
+                <div class="container">
+                    <h2>XXX Edizione</h2>
+                <h2>31-1-2 Luglio-Agosto 2026</h2>
+                <h2>Castello del Matese (CE)</h2>
+                <h3>Finito lo giubilo, li ranghi serriamo
+                    La Giostra ventura dinanzi c'abbiamo
 
 
-                Un anno importante, de celebratione
-                Necessita cura e maggior attentione
+                    Un anno importante, de celebratione
+                    Necessita cura e maggior attentione
 
 
-                Per la cifra speciale si parta d'effetto
-                Con formula magica e lo cancelletto</h3>
+                    Per la cifra speciale si parta d'effetto
+                    Con formula magica e lo cancelletto</h3>
+                </div>
+            </section>
         </main>
 
         <footer>
