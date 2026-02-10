@@ -2,15 +2,15 @@
   /* BACKGROUNDS */
   --bg-dark: #121212;
   /* Sfondo pagina */
-  --bg-card: #1E1E1E;
+  --bg-card: #1A1A1A;
   /* Sfondo box/card */
   /* TEXT */
   --text-main: #F5F5F5;
   /* Bianco sporco */
-  --text-muted: #AAAAAA;
+  --text-muted: #C6C4C1;
   /* Grigio */
   /* ACCENTS */
-  --gold-main: #FFD700;
+  --gold-main: #C9A02E;
   /* Oro acceso */
   --gold-dark: #D4AF37;
   /* Oro antico/metallico */
@@ -24,101 +24,71 @@
   /* FONTS */
   --font-title: "Cinzel", serif;
   --font-body: "Lato", sans-serif;
+  --font-giostra: "MedievalSharo", serif;
 }
 
 body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   margin: 0;
+  padding: 0;
   font-family: var(--font-body);
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gold-main);
 }
 
 .navbar {
+  background-color: black;
+  width: 100%;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+  align-self: center;
   padding: 1em;
-  background: black;
+}
+.navbar nav {
+  display: none;
 }
 .navbar .container {
   display: flex;
   place-content: space-between;
 }
-.navbar .mobile-menu {
-  cursor: pointer;
-}
-.navbar nav {
-  display: none;
-}
 
-nav.menu-btn {
-  display: block;
-}
-
-nav {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  right: 0;
-  top: 0;
-  background-color: black;
-  height: 100vh;
-  padding: 1em;
-}
-nav ul.primary-nav {
-  margin-top: 5em;
-}
-nav ul.primary-nav li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 0.5em;
-  font-size: 1.3em;
-  text-align: right;
-}
-nav ul.primary-nav li a:hover {
-  font-weight: bold;
-}
-
-.mobile-menu-exit {
-  float: right;
-  margin: 0.5em;
-  cursor: pointer;
-}
-
-a {
-  color: var(--gold-main);
-  text-decoration: none;
-}
-
-section {
-  padding: 5em 2em;
+hr {
+  border: 1px solid var(--gold-main);
 }
 
 .hero {
-  background-image: url(La_Giostra/Img/ContradeCavalieri.png);
-  background-color: #0033CC;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   text-align: center;
-  line-height: 1.2em;
-  font-size: 2.5em;
-  margin-top: 0.2em;
+}
+.hero .container {
+  background-color: orange;
 }
 
 footer {
   background-color: black;
-  padding: 2em;
+  text-align: left;
+  width: 100%;
 }
 footer .container {
   display: flex;
   place-content: space-between;
-  justify-content: center;
+  padding: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu, .mobile-menu-exit {
-    display: none;
-  }
   .navbar .container {
     display: grid;
     grid-template-columns: 250px auto;
