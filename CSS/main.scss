@@ -94,6 +94,10 @@ a {
         display: flex;
         place-content: space-between;
     }
+
+    nav li.current a{
+        color: var(--text-main);
+    }
 }
 
 nav.menu-btn {
@@ -122,6 +126,10 @@ nav {
             padding: 0.6em;
         }
 
+        a .current {
+            color: var(--text-main);
+        }
+
         &:hover {
             font-weight: bold;
         }
@@ -146,9 +154,16 @@ hr {
     width: 100%;
     text-align: center;
 
-    background-image: url("Img/ContradeCavalieri.png");
+    display: flex;
+
+    background-image: url("../Img/hero_bg.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
 
     .top-title {
         font-family: var(--font-giostra);
