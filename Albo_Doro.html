@@ -3,52 +3,398 @@
     <head>
         <meta charset="UTF-8">
         <meta name="Author" content="NothingElsee">
-        <meta name="keywords" content="HTML, LaGiostra, Giostra, Contrada, Platano, Torre, Cavallo, Cavalieri">
+        <meta name="keywords" content="HTML, LaGiostra, Giostra, Contrada, Platano, Torre, Cavallo, Cavalieri, Palio">
         <meta name="Descrizione" content="Sito Web per la Festa Medioevale 'La Giostra'">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/albo.css">
         <title>Albo D'Oro - La Giostra</title>
     </head>
     <body>
-        <table>
-            <thead>
-            <tr>
-                <th>Edizione</th>
-                <th>Vincitore</th>
-            </tr>
-            </thead>
+        <main>
+            <section class="stats-header">
+                <div class="container">
+                    <h1 class="page-title">L'ALBO D'ORO</h1>
+                    <p class="page-subtitle">30 Anni di Storia e Rivalità</p>
 
-            <tbody>
-            <tr>
-                <td>I Edizione (1995)</td>
-                <td>
-                    <img width="21" height="21" src="Img/Icone/Cavallo.png" alt="Cavallo"> 
-                    <img width="21" height="21" src="Img/Icone/Platano.png" alt="Platano">
-                    <img width="21" height="21" src="Img/Icone/Torre.png" alt="Torre">
-                </td>
-            </tr>
-            <tr>
-                <td>V Edizione</td>
-                <td><img width="21" height="21" src="Img/Icone/Torre.png" alt="Torre"></td>
-            </tr>
-            <tr>
-                <td>X Edizione</td>
-                <td>
-                    <img width="21" height="21" src="Img/Icone/Torre.png" alt="Torre">
-                </td>
-            </tr>
-            <tr>
-                <td>XV Edizione</td>
-                <td><img width="21" height="21" src="Img/Icone/Platano.png" alt="Platano"></td>
-            </tr>
-            <tr>
-                <td>XX Edizione</td>
-                <td><img width="21" height="21" src="Img/Icone/Cavallo.png" alt="Cavallo"></td>
-            </tr>
-            <tr>
-                <td>XXV Edizione</td>
-                <td><img width="21" height="21" src="Img/Icone/Platano.png" alt="Platano"></td>
-            </tr>
-            </tbody>
-        </table>
+                    <div class="resume">
+                        <div class="medal-box torre-stat">
+                            <div class="circle border-yellow">
+                                <span class="number">11</span>
+                            </div>
+                            <span class="label">Torre</span>
+                        </div>
+
+                        <div class="medal-box platano-stat">
+                            <div class="circle border-orange">
+                                <span class="number">15</span>
+                            </div>
+                            <span class="label"> Platano</span>
+                        </div>
+
+                        <div class="medal-box cavallo-stat">
+                            <div class="circle border-red">
+                                <span class="number">5</span>
+                            </div>
+                            <span class="label">Cavallo</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="timeline-section">
+                <div class="container">
+
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2025</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2024</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-row win-cavallo">
+                        <div class="year-badge">2023</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXIV</span>
+                                <img src="Img/Icone/Cavallo.png" alt="Cavallo" class="mini-icon">
+                            </div>
+                            <h3>CAVALLO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-cavallo">
+                        <div class="year-badge">2022</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXIV</span>
+                                <img src="Img/Icone/Cavallo.png" alt="Cavallo" class="mini-icon">
+                            </div>
+                            <h3>CAVALLO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-null">
+                        <div class="year-badge">2021</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXII</span>
+                                
+                            </div>
+                            <h3>NON ASSEGNATO</h3>
+                            <p class="caption">Causa interruzione</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="timeline-row win-null">
+                        <div class="year-badge">2020</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXII</span>
+                                
+                            </div>
+                            <h3>NON ASSEGNATO</h3>
+                            <p class="caption">Causa interruzione</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2019</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2018</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2017</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2016</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2015</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-cavallo">
+                        <div class="year-badge">2014</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXIV</span>
+                                <img src="Img/Icone/Cavallo.png" alt="Cavallo" class="mini-icon">
+                            </div>
+                            <h3>CAVALLO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2013</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2012</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2011</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2010</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2009</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2008</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2007</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2006</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2005</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2004</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2003</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2002</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">2001</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">2000</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">1999</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-platano">
+                        <div class="year-badge">1998</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXVI Edizione</span>
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                            </div>
+                            <h3>PLATANO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-torre">
+                        <div class="year-badge">1997</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition"> XXVII</span>
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>TORRE</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-cavallo">
+                        <div class="year-badge">1996</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXIV</span>
+                                <img src="Img/Icone/Cavallo.png" alt="Cavallo" class="mini-icon">
+                            </div>
+                            <h3>CAVALLO</h3>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row win-equo">
+                        <div class="year-badge">1995</div>
+                        <div class="winner-card">
+                            <div class="card-head">
+                                <span class="edition">XXII</span>
+                                <img src="Img/Icone/Cavallo.png" alt="Cavallo" class="mini-icon">
+                                <img src="Img/Icone/Platano.png" alt="Platano" class="mini-icon">
+                                <img src="Img/Icone/Torre.png" alt="Torre" class="mini-icon">
+                            </div>
+                            <h3>EX AEQUO</h3>   
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
     </body>
 </html>

@@ -1,0 +1,162 @@
+.stats-header {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid #333;
+    margin-bottom: 2em;
+}
+
+.page-title {
+    font-family: var(--font-giostra);
+    font-size: 2.5em;
+    color: var(--gold-main);
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+}
+
+.page-subtitle {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.medal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+    border: 3px solid #444;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.circle .number {
+    font-family: var(--font-giostra);
+    font-size: 2.2em;
+    color: var(--text-main);
+    line-height: 1;
+}
+
+.medal-box .label {
+    font-family: var(--font-title);
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.border-orange { border-color: var(--platano-orange); box-shadow: 0 0 10px rgba(255, 140, 0, 0.3); }
+.border-yellow { border-color: var(--torre-yellow);   box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+.border-red    { border-color: var(--cavallo-red);    box-shadow: 0 0 10px rgba(204, 0, 0, 0.3); }
+
+.timeline-section {
+    position: relative;
+    padding: 0 1em 4em 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 44px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold-main), #333);
+    z-index: 0;
+}
+
+.timeline-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.year-badge {
+    background-color: #000;
+    border: 2px solid var(--gold-main);
+    color: var(--gold-main);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: var(--font-title);
+    font-size: 0.9em;
+    flex-shrink: 0;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.winner-card {
+    background-color: var(--bg-card);
+    flex-grow: 1;
+    padding: 1.2;
+    border-radius: 4px;
+    border-left: 5px solid #555;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 0.5em;
+}
+
+.edition {
+    font-size: 0.75em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-family: var(--font-body);
+}
+
+.mini-icon {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.winner-card h3{
+    margin: 0;
+    font-family: var(--font-giostra);
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding: 0.5em;
+}
+
+.winner-card .caption {
+    margin: 0.5em 0 0 0;
+    font-size: 0.9em;
+    font-style: italic;
+    color: var(--text-muted);
+    padding: 0.5em;
+}
+
