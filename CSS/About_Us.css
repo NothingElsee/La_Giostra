@@ -7,7 +7,6 @@ body {
   width: 100%;
   background-color: black;
   font-family: var(--font-giostra);
-  border-bottom: 2px solid var(--gold-main);
   min-height: 80vh;
   display: flex;
   justify-content: center;
@@ -19,8 +18,44 @@ body {
   background-color: var(--bg-card);
   border-radius: 8px;
   padding: 2em;
+
   display: flex;
   flex-direction: column;
   gap: 2em;
   align-items: center;
-}/*# sourceMappingURL=About_Us.css.map */
+  justify-self: center;
+
+  max-width: 900px;
+  width: 90%;
+}
+
+.title {
+  align-items: center;
+  text-align: center;
+}
+
+.about-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-logo img{
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 2;
+  text-align: center;
+}
+
+.about-text p {
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
