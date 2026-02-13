@@ -23,9 +23,9 @@
   --cavallo-white: #F0F0F0;
   --cavallo-red: #CC0000;
   /* FONTS */
-  --font-title: "Cinzel", serif;
-  --font-body: "Lato", sans-serif;
-  --font-giostra: "MedievalSharp", serif;
+  --font-title: 'Cinzel', serif;
+  --font-body: 'Lato', sans-serif;
+  --font-giostra: 'MedievalSharp', serif;
 }
 
 * {
