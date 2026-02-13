@@ -26,7 +26,7 @@
                 <nav>
                     <img height="21" id="mobile-exit" class="mobile-menu-exit" src="Img/Assets/close-menu.svg"
                         alt="Chiudi">
-                    <ul class="primary-nav">
+                    <ul class="primary-nav" id="nav-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="come-funziona.html">L'Evento</a></li>
                         <li class="current"><a href="Albo_Doro.html">Albo D'oro</a></li>
@@ -37,7 +37,7 @@
             <hr>
         </div>
     </header>
-    <main>
+    <main id="swup" class="transition-fade">
         <section class="stats-header">
             <div class="container">
                 <h1 class="page-title">L'ALBO D'ORO</h1>
@@ -454,7 +454,16 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
     <script>
+        const swup = new Swup({
+            containers: ['#swup', '#nav-menu'], 
+            plugins: [new SwupHeadPlugin()]     
+        });
+
+
+
         // JavaScript per il menu mobile
         const mobileCTA = document.getElementById('mobile-cta');
         const mobileExit = document.getElementById('mobile-exit');
@@ -465,6 +474,10 @@
         });
 
         mobileExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+
+        swup.hooks.on('visit:start', () => {
             nav.classList.remove('menu-btn');
         });
     </script>
