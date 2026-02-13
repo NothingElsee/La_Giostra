@@ -1,0 +1,31 @@
+body {
+    padding-top: 0;
+}
+
+.about-section {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    font-family: var(--font-giostra);
+    border-bottom: 2px solid var(--gold-main);
+
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-card{
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+

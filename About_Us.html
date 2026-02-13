@@ -1,26 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
     <head>
         <meta charset="UTF-8">
         <meta name="Author" content="NothingElsee">
         <meta name="keywords" content="HTML, LaGiostra, Giostra, Contrada, Platano, Torre, Cavallo, Cavalieri">
-        <meta name="Descrizione" content="Sito Web per la Festa Medioevale "La Giostra">
+        <meta name="Descrizione" content="Sito Web per la Festa Medioevale 'La Giostra'">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/About_Us.css">
+        <link rel="icon" href="Img/Icone/logo.png">
         <title>Chi Siamo - La Giostra</title>
     </head>
 
     <body>
         <header>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="https://www.lagiostracastellomatese.it/"><img height="100"
+                        src="Img/Icone/LogoConGiullare.png" alt="La Giostra"></a>
+                <!-- target="_blank" dice al browser di aprire il link in un altra scheda-->
 
-        </header>
+                <img height="21" id="mobile-cta" class="mobile-menu" src="Img/Assets/buger-menu.svg"
+                    alt="Menu">
+
+                <!--Menu-->
+                <nav>
+                    <img height="21" id="mobile-exit" class="mobile-menu-exit" src="Img/Assets/close-menu.svg"
+                        alt="Chiudi">
+                    <ul class="primary-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Albo_Doro.html">Albo D'oro</a></li>
+                        <li class="current"><a href="About_Us.html">Chi Siamo</a></li>
+                    </ul>
+                </nav>
+            </div>
+               <hr> 
+        </div>
+    </header>
         
         <main>
-            <h1>Chi Siamo</h1>
-            <img src="Img/Icone/cluvia.png" alt="Associazione Culturale Cluvia">
-            <p>La festa medievale "LA GIOSTRA" è organizzata  dall’Associazione Culturale Cluvia, fondata nel 1995 da un gruppo di amici e giovani appassionati, legati alla cultura e alle tradizioni castellane che decisero di dar vita a questo evento. Il grande successo della manifestazione è dovuto soprattutto alla straordinaria partecipazione della popolazione, senza la quale non sarebbe stato minimamente possibile poter solo pensare di realizzare un evento come quello che è diventato La Giostra, che, negli ultimi anni, rappresenta l’evento più importante per la promozione culturale e turistica di Castello e di tutto il territorio matesino. La festa coinvolge l’intera popolazione in sfilate in costume, mercatini, banchetti, attività concertistiche e mostre d’arte. La gestione di tutta la manifestazione è caratterizzate dalla massima trasparenza e lo spirito che “Cluvia” vuole dare alla manifestazione è quello che caratterizza l’associazionismo: il volontariato, la promozione culturale delle comunità locali, il recupero “ragionato” delle tradizioni.</p>
+            <section class="about-section">
+            <div class="container">
+                <h1 class="title">Associazione Cluvia</h1>
+                <div class="about-card">
+                    <div class="about-logo"><img src="Img/cluvia.png" alt="Logo Associazione Cluvia"></div>
+                    <div class="about-text">
+                        <p>La festa medievale "LA GIOSTRA" è organizzata  dall’Associazione Culturale Cluvia, fondata nel 1995 da un gruppo di amici e giovani appassionati, legati alla cultura e alle tradizioni castellane che decisero di dar vita a questo evento. Il grande successo della manifestazione è dovuto soprattutto alla straordinaria partecipazione della popolazione, senza la quale non sarebbe stato minimamente possibile poter solo pensare di realizzare un evento come quello che è diventato La Giostra, che, negli ultimi anni, rappresenta l’evento più importante per la promozione culturale e turistica di Castello e di tutto il territorio matesino. La festa coinvolge l’intera popolazione in sfilate in costume, mercatini, banchetti, attività concertistiche e mostre d’arte. La gestione di tutta la manifestazione è caratterizzate dalla massima trasparenza e lo spirito che “Cluvia” vuole dare alla manifestazione è quello che caratterizza l’associazionismo: il volontariato, la promozione culturale delle comunità locali, il recupero “ragionato” delle tradizioni.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
         </main>
 
         <footer>
-        </footer>
+        <hr>
+        <div class="container">
+            <div class="foot foot-edizione">
+                <img class="foot-img" src="Img/Icone/logo.png" alt="Logo Giostra"> <br>
+                XXX Edizione - 2026
+            </div>
+
+            <div class="foot foot-contact">
+                <h3>Contatti</h3>
+                <p>Per informazioni, prenotazioni o richieste, contattaci:</p>
+                <ul>
+                    <li>Email: infolagiostra@gmail.com</li>
+                    <li>Telefono: +39 320 566 6942 Anna della Penda</li>
+                    <li>Dove Siamo: <a href="https://maps.app.goo.gl/NZn6cZM576RdTACfA" target="_blank">Castello del Matese</a></li>
+                </ul>           
+            </div>
+
+            <div class="foot foot-social">
+                <ul>
+                    <li><a href="https://www.instagram.com/lagiostradicastellodelmatese/?hl=it" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/lagiostradicastellodelmatese#" target="_blank">Facebook</a></li>
+                    <li><a href="https://x.com/AssCluvia" target="_blank">X</a></li>
+                </ul>
+            </div>
+
+            <div class="foot foot-copyright">
+                <p>Copyright © 2026 Associazione Cluvia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript per il menu mobile
+        const mobileCTA = document.getElementById('mobile-cta');
+        const mobileExit = document.getElementById('mobile-exit');
+        const nav = document.querySelector('nav');
+
+        mobileCTA.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        });
+
+        mobileExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        });
+    </script>
     </body>
 </html>
