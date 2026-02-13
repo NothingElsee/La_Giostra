@@ -40,12 +40,13 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
   background-color: var(--bg-dark);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0.5em;
-  border: 3px solid #444;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -125,11 +126,23 @@
 .winner-card {
   background-color: var(--bg-card);
   flex-grow: 1;
-  padding: 1.2;
+  padding: 1.2em;
   border-radius: 4px;
   border-left: 5px solid #555;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-row.win-platano .winner-card {
+  border-left-color: var(--platano-orange);
+}
+
+.timeline-row.win-torre .winner-card {
+  border-left-color: var(--torre-yellow);
+}
+
+.timeline-row.win-cavallo .winner-card {
+  border-left-color: var(--cavallo-red);
 }
 
 .card-head {
@@ -170,4 +183,105 @@
   font-style: italic;
   color: var(--text-muted);
   padding: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .stats-header {
+    padding: 5em 0;
+  }
+  .resume {
+    gap: 5em;
+  }
+  .circle {
+    width: 130px;
+    height: 130px;
+    border-width: 5px;
+  }
+  .circle .number {
+    font-size: 3.5em;
+  }
+  .medal-box .label {
+    font-size: 1.2em;
+    margin-top: 15px;
+    letter-spacing: 2px;
+  }
+  .timeline-section {
+    max-width: 1100px;
+    padding: 4em 0;
+  }
+  .timeline-section::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+  }
+  .timeline-row {
+    width: 100%;
+    margin-bottom: 4em;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .year-badge {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 1.2em;
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  .winner-card {
+    flex: 0 0 43%;
+    max-width: 43%;
+    width: 43%;
+    padding: 2em;
+    margin: 0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .winner-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+  }
+  .timeline-row:nth-child(odd) {
+    justify-content: flex-start;
+  }
+  .timeline-row:nth-child(odd) .winner-card {
+    border-left: none;
+    border-right: 5px solid #555;
+    text-align: right;
+  }
+  .timeline-row:nth-child(odd) .card-head {
+    flex-direction: row-reverse;
+  }
+  .timeline-row:nth-child(even) {
+    justify-content: flex-end;
+  }
+  .timeline-row:nth-child(even) .winner-card {
+    text-align: left;
+  }
+  .timeline-row.win-platano:nth-child(odd) .winner-card {
+    border-right-color: var(--platano-orange);
+  }
+  .timeline-row.win-torre:nth-child(odd) .winner-card {
+    border-right-color: var(--torre-yellow);
+  }
+  .timeline-row.win-cavallo:nth-child(odd) .winner-card {
+    border-right-color: var(--cavallo-red);
+  }
+  .timeline-row.win-platano:nth-child(even) .winner-card {
+    border-left-color: var(--platano-orange);
+  }
+  .timeline-row.win-torre:nth-child(even) .winner-card {
+    border-left-color: var(--torre-yellow);
+  }
+  .timeline-row.win-cavallo:nth-child(even) .winner-card {
+    border-left-color: var(--cavallo-red);
+  }
 }/*# sourceMappingURL=albo.css.map */

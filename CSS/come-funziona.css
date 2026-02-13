@@ -27,12 +27,6 @@
   line-height: 1.8;
 }
 
-.history-text ul {
-  list-style-type: disc;
-  list-style-position: inside;
-  text-align: center;
-}
-
 .dropcap {
   float: left;
   font-family: var(--font-title);
@@ -55,9 +49,30 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.structure-section {
+  padding: 60px 20px 40px 20px;
+  background-color: var(--bg-card);
+}
+
+.structure-section .structure-title {
+  text-align: center;
+  font-family: var(--font-giostra);
+  color: var(--gold-main);
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
 .section-contrade {
   padding: 60px 20px 80px 20px;
   background-color: var(--bg-dark);
+}
+
+.section-contrade .page-title {
+  text-align: center;
+  font-family: var(--font-giostra);
+  color: var(--gold-main);
+  font-size: 2.5em;
+  margin-bottom: 1em;
 }
 
 .contrade-grid {
@@ -142,25 +157,58 @@
   border-top: 1px solid #333;
 }
 
-.title-rules {
+.rules-section .title-rules {
   text-align: center;
-  font-family: var(--font-title);
-  color: var(--text-main);
+  font-family: var(--font-giostra);
+  color: var(--gold-main);
   font-size: 2em;
   margin-bottom: 2em;
   letter-spacing: 2px;
 }
 
-.text-rules h3 {
-  margin: 0 0 0.5em 0;
-  font-family: var(--font-giostra);
-  color: var(--text-main);
-  font-size: 1.4em;
-}
-
-.text-rules p {
+.text-rules {
   margin: 0;
   font-family: var(--font-body);
   color: var(--text-muted);
   line-height: 1.6;
+  text-align: center;
+}
+
+.text-rules ul {
+  margin: 0;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .history-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+  }
+  .history-text {
+    text-align: justify;
+    font-size: 1.1em;
+  }
+  .history-image {
+    max-width: 400px;
+  }
+  .contrade-grid {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 2em;
+  }
+  .contrada-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contrada-stemma {
+    align-self: center;
+  }
 }/*# sourceMappingURL=come-funziona.css.map */
