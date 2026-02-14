@@ -70,7 +70,7 @@
 }
 
 .border-yellow {
-  border-color: var(--torre-yellow);
+  border-color: var(--torre-blue);
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
@@ -138,7 +138,7 @@
 }
 
 .timeline-row.win-torre .winner-card {
-  border-left-color: var(--torre-yellow);
+  border-left-color: var(--torre-blue);
 }
 
 .timeline-row.win-cavallo .winner-card {
@@ -270,7 +270,7 @@
     border-right-color: var(--platano-orange);
   }
   .timeline-row.win-torre:nth-child(odd) .winner-card {
-    border-right-color: var(--torre-yellow);
+    border-right-color: var(--torre-blue);
   }
   .timeline-row.win-cavallo:nth-child(odd) .winner-card {
     border-right-color: var(--cavallo-red);
@@ -279,7 +279,7 @@
     border-left-color: var(--platano-orange);
   }
   .timeline-row.win-torre:nth-child(even) .winner-card {
-    border-left-color: var(--torre-yellow);
+    border-left-color: var(--torre-blue);
   }
   .timeline-row.win-cavallo:nth-child(even) .winner-card {
     border-left-color: var(--cavallo-red);
