@@ -268,6 +268,20 @@ footer .container .foot-img {
   width: 80px;
   height: auto;
 }
+footer .container .foot-social ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+footer .container .foot-social ul li a img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
 
 .footer-copyright {
   background-color: #0a0a0a;
@@ -412,9 +426,28 @@ html.is-animating .transition-fade {
     justify-content: flex-start;
     align-items: center;
   }
+  footer .foot-contact .contact-title {
+    text-align: center;
+  }
   footer .foot-img {
     width: 100px;
     margin-bottom: 0.5em;
+  }
+  footer .container .foot-social {
+    text-align: center;
+  }
+  footer .container .foot-social ul {
+    display: inline-block;
+    text-align: left;
+  }
+  footer .container .foot-social ul li {
+    display: block;
+    margin-bottom: 8px;
+  }
+  footer .container .foot-social ul li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   footer .foot {
     flex: 1;

@@ -175,9 +175,13 @@
 }
 
 .text-rules ul {
-  margin: 0;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
   list-style-type: disc;
   list-style-position: inside;
+  align-content: center;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1024px) {
