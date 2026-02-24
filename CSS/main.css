@@ -311,6 +311,22 @@ footer .container .foot-social ul li a img {
   letter-spacing: 1px;
 }
 
+.footer-copyright .policy-links {
+  margin-top: 1px;
+}
+
+.footer-copyright .policy-links a {
+  color: var(--text-muted); /* Usa lo grigio per non distrarre */
+  text-decoration: none;
+  padding: 0 5px;
+  font-size: 0.7em;
+  transition: color 0.3s ease;
+}
+
+.footer-copyright .policy-links a:hover {
+  color: var(--gold-main); /* Si illumina d'oro quando ci passi sopra col mouse */
+}
+
 .transition-fade {
   transition: opacity 0.4s ease, transform 0.4s ease;
   opacity: 1;
