@@ -74,9 +74,19 @@ a {
     background-color: black;
     width: 100%;
     font-family: var(--font-giostra);
+    border-bottom: 1px solid var(--gold-main);
+    height: 120px;
 
-    .logo .logo_img{
-        scale: 80%;
+    .logo {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo .logo_img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
     }
 
     .mobile-menu {
@@ -97,6 +107,8 @@ a {
     .container {
         display: flex;
         place-content: space-between;
+        height: 100%;
+        align-items: center;
     }
 
     nav li.current a {
@@ -144,10 +156,6 @@ nav li a:hover {
     margin: 1em;
     width: 50px;
     height: auto;
-}
-
-hr {
-    border: 1px solid var(--gold-main);
 }
 
 .hero {
@@ -294,6 +302,7 @@ footer {
     background-color: black;
     text-align: left;
     width: 100%;
+    border-top: 1px solid var(--gold-main);
 
     .container {
         place-content: space-between;

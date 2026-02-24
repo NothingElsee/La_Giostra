@@ -67,9 +67,19 @@ a {
   background-color: black;
   width: 100%;
   font-family: var(--font-giostra);
+  border-bottom: 1px solid var(--gold-main);
+  height: 120px;
+}
+.navbar .logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 .navbar .logo .logo_img {
-  scale: 80%;
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .navbar .mobile-menu {
   width: 70px;
@@ -86,6 +96,8 @@ a {
 .navbar .container {
   display: flex;
   place-content: space-between;
+  height: 100%;
+  align-items: center;
 }
 .navbar nav li.current a {
   color: var(--text-main);
@@ -130,10 +142,6 @@ nav li a:hover {
   margin: 1em;
   width: 50px;
   height: auto;
-}
-
-hr {
-  border: 1px solid var(--gold-main);
 }
 
 .hero {
@@ -258,6 +266,7 @@ footer {
   background-color: black;
   text-align: left;
   width: 100%;
+  border-top: 1px solid var(--gold-main);
 }
 footer .container {
   place-content: space-between;
