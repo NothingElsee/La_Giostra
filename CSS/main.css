@@ -68,6 +68,9 @@ a {
   width: 100%;
   font-family: var(--font-giostra);
 }
+.navbar .logo .logo_img {
+  scale: 80%;
+}
 .navbar .mobile-menu {
   width: 70px;
   height: auto;
@@ -138,6 +141,7 @@ hr {
   margin: 0;
   width: 100%;
   text-align: center;
+  color: black;
   display: flex;
   background-image: url("../Img/hero_bg.png");
   background-size: cover;
