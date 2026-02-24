@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/come-funziona.css">
-    <link rel="icon" href="Img/Icone/logo.png">
+    <link rel="icon" href="Img/Icone/logo.webp">
     <title>Il Programma e il Torneo | La Giostra - Castello del Matese</title>
 
     <!-- Start cookieyes banner -->
     <script data-swup-ignore id="cookieyes" type="text/javascript"
-        src="https://cdn-cookieyes.com/client_data/85133cbbe04ee679479636faf598fe12/script.js"></script>
+        src="https://cdn-cookieyes.com/client_data/85133cbbe04ee679479636faf598fe12/script.js" defer></script>
     <!-- End cookieyes banner -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2PPVKEE7Y"></script>
@@ -270,13 +270,13 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swup@4"></script>
-    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
+    <script src="https://unpkg.com/swup@4" defer></script>
+    <script src="https://unpkg.com/@swup/head-plugin@2" defer></script>
     <script>
         const swup = new Swup({
             containers: ['#swup', '#nav-menu'],
             plugins: [new SwupHeadPlugin({ persistTags: true })]
-        });
+        }); 
 
 
 
@@ -296,6 +296,7 @@
         swup.hooks.on('visit:start', () => {
             nav.classList.remove('menu-btn');
         });
+
         swup.hooks.on('page:view', () => {
             // Controlla se Google Analytics è caricato e invia lo nuovo URL
             if (typeof gtag === 'function') {

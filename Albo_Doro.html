@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/albo.css">
-    <link rel="icon" href="Img/Icone/logo.png">
+    <link rel="icon" href="Img/Icone/logo.webp">
     <title>Albo D'Oro delle Contrade | La Giostra - Festa Medievale</title>
 
     <!-- Start cookieyes banner -->
@@ -471,13 +471,13 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swup@4"></script>
-    <script src="https://unpkg.com/@swup/head-plugin@2"></script>
+    <script src="https://unpkg.com/swup@4" defer></script>
+    <script src="https://unpkg.com/@swup/head-plugin@2" defer></script>
     <script>
         const swup = new Swup({
             containers: ['#swup', '#nav-menu'],
             plugins: [new SwupHeadPlugin({ persistTags: true })]
-        });
+        }); 
 
 
 
@@ -497,6 +497,7 @@
         swup.hooks.on('visit:start', () => {
             nav.classList.remove('menu-btn');
         });
+
         swup.hooks.on('page:view', () => {
             // Controlla se Google Analytics è caricato e invia lo nuovo URL
             if (typeof gtag === 'function') {
