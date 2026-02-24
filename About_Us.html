@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preload" as="image" href="/Img/hero_bg.webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="Author" content="NothingElsee">
     <meta name="description"
         content="L'Associazione Culturale Cluvia organizza dal 1995 la festa medievale La Giostra a Castello del Matese, promuovendo storia, cultura e tradizioni locali.">
@@ -15,7 +17,7 @@
 
     <!-- Start cookieyes banner -->
     <script data-swup-ignore id="cookieyes" type="text/javascript"
-        src="https://cdn-cookieyes.com/client_data/85133cbbe04ee679479636faf598fe12/script.js"></script>
+        src="https://cdn-cookieyes.com/client_data/85133cbbe04ee679479636faf598fe12/script.js" defer></script>
     <!-- End cookieyes banner -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2PPVKEE7Y"></script>
@@ -111,14 +113,14 @@
                 </ul>
             </div>
             <div class="foot foot-edizione">
-                <img class="foot-img" src="Img/Icone/logo.png" alt="Logo Giostra"> <br>
+                <img class="foot-img" src="Img/Icone/logo.webp" alt="Logo Giostra"> <br>
                 XXX Edizione - 2026
             </div>
         </div>
         <div class="footer-copyright">
             <p>Copyright © 2026 Associazione Cluvia. All rights reserved.</p>
             <div class="policy-links">
-                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="privacy.html">Privacy Policy</a> |
                 <a href="cookie.html">Cookie Policy</a>
             </div>
         </div>
@@ -130,7 +132,7 @@
         const swup = new Swup({
             containers: ['#swup', '#nav-menu'],
             plugins: [new SwupHeadPlugin({ persistTags: true })]
-        }); 
+        });
 
 
 

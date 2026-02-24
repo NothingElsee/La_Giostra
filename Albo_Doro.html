@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preload" as="image" href="/Img/hero_bg.webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="Author" content="NothingElsee">
     <meta name="description"
         content="Consulta l'Albo d'Oro de La Giostra. 30 anni di sfide, vittorie e rivalità storiche tra le contrade Platano, Torre e Cavallo a Castello del Matese.">
@@ -15,7 +17,7 @@
 
     <!-- Start cookieyes banner -->
     <script data-swup-ignore id="cookieyes" type="text/javascript"
-        src="https://cdn-cookieyes.com/client_data/85133cbbe04ee679479636faf598fe12/script.js"></script>
+        src="https://cdn-cookieyes.com/client_data/85133cbbe04ee679479636faf598fe12/script.js" defer></script>
     <!-- End cookieyes banner -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2PPVKEE7Y"></script>
@@ -458,7 +460,7 @@
                 </ul>
             </div>
             <div class="foot foot-edizione">
-                <img class="foot-img" src="Img/Icone/logo.png" alt="Logo Giostra"> <br>
+                <img class="foot-img" src="Img/Icone/logo.webp" alt="Logo Giostra"> <br>
                 XXX Edizione - 2026
             </div>
         </div>
@@ -477,7 +479,7 @@
         const swup = new Swup({
             containers: ['#swup', '#nav-menu'],
             plugins: [new SwupHeadPlugin({ persistTags: true })]
-        }); 
+        });
 
 
 
